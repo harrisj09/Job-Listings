@@ -1,0 +1,6 @@
+{
+    "scripts": {
+      "dev": "parcel <your entry file>",
+      "build": "parcel build <your entry file>"
+    }
+  }
