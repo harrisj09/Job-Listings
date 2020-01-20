@@ -1,4 +1,5 @@
 // Newsletter on load for page
-window.onload = function() {
 
-};
+window.addEventListener("load", (event) => {
+    console.log("page loaded");
+});
