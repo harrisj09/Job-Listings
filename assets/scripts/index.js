@@ -1,5 +1,4 @@
-console.log("Hello world");
-
+// Newsletter on load for page
 window.onload = function() {
 
 };

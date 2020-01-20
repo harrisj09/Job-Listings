@@ -1,0 +1,27 @@
+.app__title {
+    font-size: $titleMobileSize;
+    color: red;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.app__redirects-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.app__redirects-options {
+    font-size: $redirectsMobileSize;
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+}

@@ -1,0 +1,32 @@
+/* Colors */
+/* Fonts */
+/* Font Sizes */
+/* MOBILE */
+/* TABLET */
+/* SMALLER MONITOR */
+/* DESKTOPS */
+.app__title {
+  font-size: 1.15rem;
+  color: red;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.app__redirects-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.app__redirects-options {
+  font-size: 0.65rem;
+}
+
+/* Base Attributes */
+.app {
+  margin: 0px;
+}
+/*# sourceMappingURL=style.css.map */
