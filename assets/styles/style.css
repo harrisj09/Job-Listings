@@ -143,7 +143,7 @@
 }
 
 .app__main-display--smaller-iphone6-desc {
-  content: "";
+  display: none;
 }
 
 @media only screen and (min-width: 500px) {
