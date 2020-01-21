@@ -143,7 +143,7 @@
 }
 
 .app__main-display--smaller-iphone6-desc {
-  display: none;
+  content: "";
 }
 
 @media only screen and (min-width: 500px) {
@@ -205,6 +205,10 @@
     width: 310px;
     height: 201px;
   }
+  .app__main-display--smaller-iphone6-desc {
+    font-size: 1.15rem;
+    color: #FFFFFF;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -237,6 +241,11 @@
     border: 1px solid black;
     width: 630px;
     height: 450px;
+  }
+  .app__main-display--smaller-iphone6-desc {
+    content: "Lorem Ipsum dolor sit amet, consectetur adipiscing elit, labor";
+    font-size: 1.15rem;
+    color: #FFFFFF;
   }
 }
 
@@ -287,6 +296,7 @@
     height: 380px;
   }
   .app__main-display--smaller-iphone6-desc {
+    content: "Lorem Ipsum dolor sit amet, consectetur adipiscing elit, labor";
     font-size: 1.15rem;
     color: #FFFFFF;
   }
