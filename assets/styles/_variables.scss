@@ -1,5 +1,5 @@
 /* Colors */
-
+$white: #FFFFFF;
 
 
 
@@ -18,8 +18,10 @@ $topConfigsMobile: .75rem;
 $titleMobileSize: 1.15rem;
 $redirectsMobileSize: 0.55rem;
 
-$mainDisplayTitleDesktopSize: 1.15rem; 
-$mainDisplayParagraphDesktopSize: 0.85rem;
+$mainDisplayTitleMobileSize: 1.15rem; 
+$mainDisplayParagraphMobileSize: 0.85rem;
+
+$mainDisplaySmallerDescMobileSize: 0.55rem;
 
 /* TABLET */
 
@@ -35,3 +37,5 @@ $redirectsDesktopSize: 1.15rem;
 
 $mainDisplayTitleDesktopSize: 1.15rem; 
 $mainDisplayParagraphDesktopSize: 1.45rem;
+
+$mainDisplaySmallerDescDesktopSize: 1.15rem;
