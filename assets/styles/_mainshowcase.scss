@@ -1,4 +1,4 @@
-@media only screen and (min-width: 250px) {
+
     .app__main-display {
         background: linear-gradient(0.25turn, #FF4858, #8F65FF);
         margin-top: 40px;
@@ -39,7 +39,6 @@
         width: 150px;
         height: 200px;
     }
-}
 
 @media only screen and (min-width: 500px) {
     .app__main-display {
@@ -130,6 +129,7 @@
 }
 
 @media only screen and (min-width: 1300px) {
+    /* Declare as display flex */
     .app__main-display {
         background: linear-gradient(0.25turn, #FF4858, #8F65FF);
         margin-top: 40px;
@@ -137,8 +137,18 @@
         height: 650px;
     }
 
+    .app__main-title {
+        color: white;
+        margin: 50px 0px 0px 100px;
+        width: 200px;
+        font-size: $titleDesktopSize;
+    }
+
     .app__main-paragraph {
-        width: 340px;
+        color: white;
+        margin: 50px 0px 0px 100px;
+        width: 400px;
+        font-size: $redirectsDesktopSize;
     }
 
     .app__main--smaller-wrapper {
@@ -154,12 +164,14 @@
         height: 280px;
     }
 
+    /* Could be done with flex-end inside the parent element */
     .app__main-display--item {
         position: relative;
-        top: 100px;
+        top: 10px;
+        right: 70px;
         float: right;
         border: 2px solid black;
         width: 630px;
-        height: 450px;
+        height: 380px;
     }
 }

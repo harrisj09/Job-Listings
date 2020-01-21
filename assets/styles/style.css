@@ -5,106 +5,112 @@
 /* TABLET */
 /* SMALLER MONITOR */
 /* DESKTOPS */
-@media only screen and (min-width: 250px) {
-  .app__personal-configs {
-    border-bottom: 3px solid #d4d4d4;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .app__personal-configs__expression {
-    margin: 10px 0px;
-  }
-  .app__personal-configs__drop-down {
-    margin-bottom: 10px 0px;
-    border: 2px solid black;
-    width: 20px;
-    height: 20px;
-  }
-  .app__title {
-    margin-top: 20px;
-    font-size: 1.15rem;
-    color: red;
-    text-align: center;
-    letter-spacing: 5px;
-  }
-  .app__redirects-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .app__redirects-options {
-    text-decoration: none;
-    font-size: 0.55rem;
-    padding-right: 15px;
-  }
+.app__personal-configs {
+  border-bottom: 3px solid #d4d4d4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__personal-configs__expression {
+  margin: 10px 0px;
+}
+
+.app__personal-configs__drop-down {
+  margin-bottom: 10px 0px;
+  border: 2px solid black;
+  width: 20px;
+  height: 20px;
+}
+
+.app__title {
+  margin-top: 20px;
+  font-size: 1.15rem;
+  color: red;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.app__redirects-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app__redirects-options {
+  text-decoration: none;
+  font-size: 0.55rem;
+  padding-right: 15px;
 }
 
 @media only screen and (min-width: 1300px) {
   .app__title {
     margin-top: 20px;
-    font-size: 1.75rem;
+    font-size: 2.75rem;
     color: red;
     text-align: center;
     letter-spacing: 5px;
   }
   .app__redirects-options {
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 1.45rem;
     padding-right: 15px;
   }
 }
 
-@media only screen and (min-width: 250px) {
-  .app__main-display {
-    background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
-    background: linear-gradient(0.25turn, #FF4858, #8F65FF);
-    margin-top: 40px;
-    border: 2px solid black;
-    height: 280px;
-  }
-  .app__main-title {
-    color: white;
-    width: 200px;
-    font-size: 1.15rem;
-  }
-  .app__main-paragraph {
-    color: white;
-    width: 200px;
-    font-size: 0.55rem;
-  }
-  .app__main--smaller-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .app__main-display--smaller {
-    position: relative;
-    bottom: 50px;
-    border: 2px solid black;
-    width: 33%;
-    height: 101px;
-  }
-  .app__main-display--item {
-    position: relative;
-    top: 25px;
-    float: right;
-    border: 2px solid black;
-    width: 150px;
-    height: 200px;
-  }
+.app__main-display {
+  background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
+  background: linear-gradient(0.25turn, #FF4858, #8F65FF);
+  margin-top: 40px;
+  border: 2px solid black;
+  height: 280px;
+}
+
+.app__main-title {
+  color: white;
+  width: 200px;
+  font-size: 1.15rem;
+}
+
+.app__main-paragraph {
+  color: white;
+  width: 200px;
+  font-size: 0.55rem;
+}
+
+.app__main--smaller-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app__main-display--smaller {
+  position: relative;
+  bottom: 50px;
+  border: 2px solid black;
+  width: 33%;
+  height: 101px;
+}
+
+.app__main-display--item {
+  position: relative;
+  top: 25px;
+  float: right;
+  border: 2px solid black;
+  width: 150px;
+  height: 200px;
 }
 
 @media only screen and (min-width: 500px) {
@@ -202,6 +208,7 @@
 }
 
 @media only screen and (min-width: 1300px) {
+  /* Declare as display flex */
   .app__main-display {
     background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
     background: linear-gradient(0.25turn, #FF4858, #8F65FF);
@@ -209,8 +216,17 @@
     border: 2px solid black;
     height: 650px;
   }
+  .app__main-title {
+    color: white;
+    margin: 50px 0px 0px 100px;
+    width: 200px;
+    font-size: 2.75rem;
+  }
   .app__main-paragraph {
-    width: 340px;
+    color: white;
+    margin: 50px 0px 0px 100px;
+    width: 400px;
+    font-size: 1.45rem;
   }
   .app__main--smaller-wrapper {
     display: -webkit-box;
@@ -227,13 +243,15 @@
     width: 390px;
     height: 280px;
   }
+  /* Could be done with flex-end inside the parent element */
   .app__main-display--item {
     position: relative;
-    top: 100px;
+    top: 10px;
+    right: 70px;
     float: right;
     border: 2px solid black;
     width: 630px;
-    height: 450px;
+    height: 380px;
   }
 }
 
