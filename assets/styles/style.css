@@ -45,26 +45,32 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .app__redirects-options {
+  color: #22262A;
   text-decoration: none;
   font-size: 0.55rem;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
 @media only screen and (min-width: 1300px) {
   .app__title {
     margin-top: 20px;
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     color: red;
     text-align: center;
     letter-spacing: 5px;
   }
   .app__redirects-options {
+    padding-top: 15px;
     text-decoration: none;
-    font-size: 0.75rem;
-    padding-right: 15px;
+    font-size: 0.7rem;
+    padding-right: 30px;
   }
   .personal-configs__wrapper {
     display: -webkit-box;
@@ -108,9 +114,11 @@
     height: 101px;
   }
   .app__main-display--item {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     position: relative;
-    top: 25px;
-    float: right;
+    margin-left: 35%;
+    margin-bottom: 20px;
     width: 175px;
     height: 200px;
   }
@@ -147,36 +155,6 @@
   }
 }
 
-@media only screen and (min-width: 500px) {
-  .app__main-display {
-    background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
-    background: linear-gradient(0.25turn, #FF4858, #8F65FF);
-    margin-top: 40px;
-    height: 380px;
-  }
-  .app__main--smaller-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .app__main-display--smaller {
-    position: relative;
-    bottom: 50px;
-    width: 33%;
-    height: 151px;
-  }
-  .app__main-display--item {
-    position: relative;
-    top: 25px;
-    float: right;
-    width: 275px;
-    height: 300px;
-  }
-}
-
 @media only screen and (min-width: 600px) {
   .app__main-display {
     display: -webkit-box;
@@ -203,6 +181,15 @@
     bottom: 50px;
     width: 310px;
     height: 201px;
+  }
+  .app__main-display--item {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    position: relative;
+    margin-left: auto;
+    margin-bottom: 0px;
+    width: 410px;
+    height: 350px;
   }
   .app__main-display--smaller-iphone6-desc {
     font-size: 1.15rem;
@@ -238,9 +225,9 @@
     -ms-flex-item-align: end;
         align-self: flex-end;
     position: relative;
-    top: 70px;
-    float: right;
-    width: 630px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    width: 550px;
     height: 450px;
   }
   .app__main-display--smaller-iphone6-desc {
@@ -258,14 +245,14 @@
     display: flex;
     background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
     background: linear-gradient(0.25turn, #FF4858, #8F65FF);
-    margin-top: 40px;
+    margin-top: 23px;
     height: 650px;
   }
   .app__main-title {
     color: white;
     margin: 50px 0px 0px 100px;
     width: 200px;
-    font-size: 2.75rem;
+    font-size: 2.25rem;
   }
   .app__main-paragraph {
     color: white;
@@ -292,7 +279,8 @@
         align-self: flex-end;
     position: relative;
     margin-left: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    margin-right: 200px;
     width: 630px;
     height: 580px;
   }

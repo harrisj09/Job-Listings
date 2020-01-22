@@ -28,12 +28,14 @@
     .app__redirects-wrapper {
         display: flex;
         justify-content: center;
+        flex-flow: row wrap;
     }
     
     .app__redirects-options {
+        color: #22262A;
         text-decoration: none;
         font-size: $redirectsMobileSize;
-        padding-right: 15px;
+        padding-right: 10px;
    }
 
 @media only screen and (min-width: 600px) {
@@ -54,9 +56,10 @@
     }
 
     .app__redirects-options {
+        padding-top: 15px;
         text-decoration: none;
         font-size: $redirectsDesktopSize;
-        padding-right: 15px;
+        padding-right: 30px;
     }
 
     .personal-configs__wrapper {
