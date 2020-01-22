@@ -165,7 +165,6 @@
   .app__main-display--smaller {
     position: relative;
     bottom: 50px;
-    border: 2px solid black;
     width: 33%;
     height: 151px;
   }
@@ -285,7 +284,6 @@
   .app__main-display--smaller {
     position: relative;
     bottom: 50px;
-    border: 2px solid black;
     width: 390px;
     height: 280px;
   }
