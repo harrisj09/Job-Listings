@@ -126,7 +126,6 @@
     .app__main-display--smaller {
         position: relative;
         bottom: 50px;
-        border: 2px solid black;
         width: 310px;
         height: 201px;
     }
@@ -153,7 +152,6 @@
     .app__main-display--smaller {
         position: relative;
         bottom: 50px;
-        border: 2px solid black;
         width: 310px;
         height: 201px;
     }
@@ -210,7 +208,6 @@
         height: 280px;
     }
 
-    /* Could be done with flex-end inside the parent element */
     .app__main-display--item {
         align-self: flex-end;
         position: relative;
