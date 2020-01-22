@@ -196,9 +196,9 @@
 
     .app__main-paragraph {
         color: white;
-        margin: 50px 0px 0px 100px;
+        margin: 30px 0px 0px 100px;
         width: 400px;
-        font-size: $redirectsDesktopSize;
+        font-size: $mainDisplayParagraphDesktopSize;
     }
 
     .app__main--smaller-wrapper {
@@ -217,6 +217,9 @@
     /* Could be done with flex-end inside the parent element */
     .app__main-display--item {
         align-self: flex-end;
+        position: relative;
+        margin-left: auto;
+        margin-bottom: 20px;
         width: 630px;
         height: 580px;
     }
@@ -225,5 +228,9 @@
         content: "Lorem Ipsum dolor sit amet, consectetur adipiscing elit, labor";
         font-size: $mainDisplaySmallerDescDesktopSize;
         color: $white;
+    }
+
+    .app__main-display--desc-wrapper {
+        margin-left: auto;
     }
 }
