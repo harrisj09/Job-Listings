@@ -6,7 +6,7 @@
 /* SMALLER MONITOR */
 /* DESKTOPS */
 .app__personal-configs {
-  border-bottom: 2px solid #e7e7e7;
+  border-bottom: 2px solid #ececec;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,7 +152,6 @@
     background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
     background: linear-gradient(0.25turn, #FF4858, #8F65FF);
     margin-top: 40px;
-    border: 2px solid black;
     height: 380px;
   }
   .app__main--smaller-wrapper {
@@ -187,7 +186,6 @@
     background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
     background: linear-gradient(0.25turn, #FF4858, #8F65FF);
     margin-top: 40px;
-    border: 2px solid black;
     height: 480px;
   }
   .app__main-paragraph {
@@ -222,7 +220,6 @@
     background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
     background: linear-gradient(0.25turn, #FF4858, #8F65FF);
     margin-top: 40px;
-    border: 2px solid black;
     height: 580px;
   }
   .app__main--smaller-wrapper {
@@ -265,7 +262,6 @@
     background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
     background: linear-gradient(0.25turn, #FF4858, #8F65FF);
     margin-top: 40px;
-    border: 2px solid black;
     height: 650px;
   }
   .app__main-title {
