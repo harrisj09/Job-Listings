@@ -66,84 +66,85 @@
     font-size: 1.15rem;
     padding-right: 15px;
   }
+  .personal-configs__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.app__main-display {
-  background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
-  background: linear-gradient(0.25turn, #FF4858, #8F65FF);
-  margin-top: 40px;
-  height: 280px;
-}
-
-.app__main-title {
-  color: white;
-  width: 200px;
-  font-size: 1.15rem;
-}
-
-.app__main-paragraph {
-  color: white;
-  width: 200px;
-  font-size: 0.55rem;
-}
-
-.app__main--smaller-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.app__main-display--smaller {
-  position: relative;
-  bottom: 50px;
-  width: 33.3%;
-  height: 101px;
-}
-
-.app__main-display--item {
-  position: relative;
-  top: 25px;
-  float: right;
-  border: 1px solid black;
-  width: 150px;
-  height: 200px;
-}
-
-.app__main-display--smaller-iphone6 {
-  background-color: #FF6875;
-}
-
-.app__main-display--smaller-oculus {
-  background-color: #F6F7F8;
-}
-
-.app__main-display--smaller-gopro {
-  background-color: #C1C8CE;
-}
-
-.app__main-display--smaller-iphone6--image {
-  border: 2px solid black;
-  width: 50px;
-  height: 50px;
-}
-
-.app__main-display--smaller-oculus--image {
-  border: 2px solid black;
-  width: 50px;
-  height: 50px;
-}
-
-.app__main-display--smaller-gopro--image {
-  border: 2px solid black;
-  width: 50px;
-  height: 50px;
-}
-
-.app__main-display--smaller-iphone6-desc {
-  display: none;
+@media only screen and (min-width: 250px) {
+  .app__main-display {
+    background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
+    background: linear-gradient(0.25turn, #FF4858, #8F65FF);
+    margin-top: 40px;
+    height: 280px;
+  }
+  .app__main-title {
+    color: white;
+    width: 200px;
+    font-size: 1.15rem;
+  }
+  .app__main-paragraph {
+    color: white;
+    width: 200px;
+    font-size: 0.55rem;
+  }
+  .app__main--smaller-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .app__main-display--smaller {
+    position: relative;
+    bottom: 50px;
+    width: 33.3%;
+    height: 101px;
+  }
+  .app__main-display--item {
+    position: relative;
+    top: 25px;
+    float: right;
+    width: 175px;
+    height: 200px;
+  }
+  .app__main-display--smaller-iphone6 {
+    background-color: #FF6875;
+  }
+  .app__main-display--smaller-oculus {
+    background-color: #F6F7F8;
+  }
+  .app__main-display--smaller-gopro {
+    background-color: #C1C8CE;
+  }
+  .app__main-display--smaller-iphone6--image {
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+  }
+  .app__main-display--smaller-oculus--image {
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+  }
+  .app__main-display--smaller-gopro--image {
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+  }
+  .app__main-display--smaller-iphone6-desc {
+    display: none;
+  }
+  .app__main-display-title {
+    font-size: 1.15rem;
+    color: white;
+  }
 }
 
 @media only screen and (min-width: 500px) {
@@ -173,7 +174,6 @@
     position: relative;
     top: 25px;
     float: right;
-    border: 1px solid black;
     width: 275px;
     height: 300px;
   }
@@ -181,6 +181,9 @@
 
 @media only screen and (min-width: 600px) {
   .app__main-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
     background: linear-gradient(0.25turn, #FF4858, #8F65FF);
     margin-top: 40px;
@@ -213,6 +216,9 @@
 
 @media only screen and (min-width: 1000px) {
   .app__main-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
     background: linear-gradient(0.25turn, #FF4858, #8F65FF);
     margin-top: 40px;
@@ -235,10 +241,11 @@
     height: 201px;
   }
   .app__main-display--item {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     position: relative;
     top: 70px;
     float: right;
-    border: 1px solid black;
     width: 630px;
     height: 450px;
   }
@@ -252,6 +259,9 @@
 @media only screen and (min-width: 1300px) {
   /* Declare as display flex */
   .app__main-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     background: -webkit-gradient(linear, left top, right top, from(#FF4858), to(#8F65FF));
     background: linear-gradient(0.25turn, #FF4858, #8F65FF);
     margin-top: 40px;
@@ -287,13 +297,10 @@
   }
   /* Could be done with flex-end inside the parent element */
   .app__main-display--item {
-    position: relative;
-    top: 10px;
-    right: 70px;
-    float: right;
-    border: 1px solid black;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     width: 630px;
-    height: 380px;
+    height: 580px;
   }
   .app__main-display--smaller-iphone6-desc {
     content: "Lorem Ipsum dolor sit amet, consectetur adipiscing elit, labor";

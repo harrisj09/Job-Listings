@@ -10,7 +10,10 @@
       <title>Bouncer - Electronics, Technology & So Much More</title>
       <!-- CSS Files -->
       <link href="assets/styles/style.css" rel="stylesheet"/>
-        
+
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">  
+
     </head>
 
     <div class="app">
@@ -30,17 +33,25 @@
         -->
 
       <nav class="app__personal-configs"> 
-        <p class="app__personal-configs__expression">EN</p>
-        <div class="app__personal-configs__drop-down"></div>
+      <div class="personal-configs__wrapper">
+          <p class="app__personal-configs__expression">EN</p>
+         <div class="app__personal-configs__drop-down"></div>
+        </div>
 
-        <p class="app__personal-configs__expression">USD</p>
-        <div class="app__personal-configs__drop-down"></div>
+      <div class="personal-configs__wrapper">
+          <p class="app__personal-configs__expression">USD</p>
+          <div class="app__personal-configs__drop-down"></div>
+      </div>
 
-        <div class="app__personal-configs__expression--profile"></div>
-        <p class="app__personal-configs__expression">My Profile</p>
+      <div class="personal-configs__wrapper">
+          <div class="app__personal-configs__expression--profile"></div>
+          <p class="app__personal-configs__expression">My Profile</p>
+      </div>
 
-        <div class="app__personal-configs__expression--shopping"></div>
-        <p class="app__personal-configs__expression">0 Items</p>
+      <div class="personal-configs__wrapper">
+          <div class="app__personal-configs__expression--shopping"></div>
+          <p class="app__personal-configs__expression">0 Items</p>
+      </div>
 
       </nav>
 
@@ -56,18 +67,20 @@
       </div>
 
       <div class="app__main-display">
+        <div class="app__main-display--desc-wrapper">
         <h1 class="app__main-title">iPhone X</h1>
         <p class="app__main-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
         <a class="app__main-paragraph app__main-paragraph--more" href="#">MORE</a>
+      </div>
         <!-- Make sure this has proper index since the app__main-display--smaller is suppose to overlap it -->
-        <div class="app__main-display--item"> </div>
+        <img class="app__main-display--item" src="assets/images/iphonex.png"> </img>
       </div>
 
       <div class="app__main--smaller-wrapper">
         <div class="app__main-display--smaller app__main-display--smaller-iphone6"> 
-          <h2>iPhone 6</h2>
+          <h2 class="app__main-display-title">iPhone 6</h2>
           <p class="app__main-display--smaller-iphone6-desc">Lorem Ipsum dolor sit amet, consectetur adipiscing elit, labor</p>
-          <h2>$399</h2>
+          <h2 class="app__main-display-title">$399</h2>
           <div class="app__main-display--smaller-iphone6--image"> </div>
         </div>
 

@@ -58,4 +58,9 @@
         font-size: $redirectsDesktopSize;
         padding-right: 15px;
     }
+
+    .personal-configs__wrapper {
+        display: flex;
+        align-items: center;
+    }
 }
