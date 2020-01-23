@@ -153,8 +153,7 @@
 }
 
 .app__main-display--smaller-oculus--image {
-  border: 2px solid black;
-  width: 50px;
+  width: 75px;
   height: 50px;
 }
 
@@ -331,14 +330,30 @@
     height: 175px;
   }
   .app__main-display--smaller-oculus--image {
-    border: 2px solid black;
-    width: 50px;
-    height: 50px;
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 175px;
+    height: 125px;
+  }
+  .app__main-display-title--oculus {
+    color: #22262A;
+  }
+  .app__main-display-title--oculus--price {
+    color: #22262A;
+    display: inline-block;
   }
   .app__main-display--smaller-gopro--image {
     border: 2px solid black;
     width: 50px;
     height: 50px;
+  }
+  .oculus__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
