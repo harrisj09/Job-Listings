@@ -6,12 +6,15 @@
     }
 
     .app__personal-configs__expression {
+        font-family: $monsterratFont;
         font-size: $topConfigsMobile;
         margin: 10px 0px;
+        cursor: pointer;
     }
 
     .app__personal-configs__drop-down {
         margin-bottom: 10px 0px;
+        cursor: pointer;
         border: 2px solid black;
         width: 10px;
         height: 10px;
@@ -19,6 +22,7 @@
     
     .app__title {
         margin-top: 20px;
+        font-family: $monsterratFont;
         font-size: $titleMobileSize;
         color: red;
         text-align: center;
@@ -35,6 +39,7 @@
         color: #22262A;
         text-decoration: none;
         font-size: $redirectsMobileSize;
+        font-family: $monsterratFont;
         padding-right: 10px;
    }
 
@@ -59,6 +64,7 @@
         padding-top: 15px;
         text-decoration: none;
         font-size: $redirectsDesktopSize;
+        font-family: $monsterratFont;
         padding-right: 30px;
     }
 

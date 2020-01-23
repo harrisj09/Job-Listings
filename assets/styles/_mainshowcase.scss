@@ -8,11 +8,13 @@
         color: white;
         width: 200px;
         font-size: $titleMobileSize;
+        font-family: $monsterratFont;
     }
 
     .app__main-paragraph {
         color: white;
         width: 200px;
+        font-family: $monsterratFont;
         font-size: $redirectsMobileSize;
     }
 
@@ -67,11 +69,13 @@
     }
 
     .app__main-display--smaller-iphone6-desc {
+        font-family: $monsterratFont;
         font-size: 0rem;
     }
     
     .app__main-display-title {
         font-size: $titleMobileSize;
+        font-family: $monsterratFont;
         color: white;
     }
 
