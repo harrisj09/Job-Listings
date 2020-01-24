@@ -60,6 +60,13 @@
         letter-spacing: 5px;
     }
 
+    .app__personal-configs__expression {
+        font-family: $monsterratFont;
+        font-size: $topConfigsDesktop;
+        margin: 10px 0px;
+        cursor: pointer;
+    }
+
     .app__redirects-options {
         padding-top: 15px;
         text-decoration: none;

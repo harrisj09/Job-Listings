@@ -62,7 +62,6 @@
     }
 
     .app__main-display--smaller-gopro--image {
-        border: 2px solid black;
         width: 50px;
         height: 50px;
     }
@@ -237,17 +236,19 @@
 
     .app__main-display-title--oculus {
         color: #22262A;
+        margin-right: 45px;
     }
 
     .app__main-display-title--oculus--price {
         color: #22262A;
         display: inline-block;
+        margin-left: 45px;
     }
 
     .app__main-display--smaller-gopro--image {
-        border: 2px solid black;
-        width: 50px;
-        height: 50px;
+        width: 150px;
+        height: 150px;
+        margin-left: 175px;
     }
 
     .oculus__wrapper {
