@@ -15,4 +15,5 @@ item.addEventListener("mouseover", () => {
 JS functionality needed is
 - Change color of app__redirects
 - Hamburger menu for mobile versions
+- Carousel on hero https://mobirise.com/bootstrap-carousel/bootstrap-video-carousel.html 
 */
