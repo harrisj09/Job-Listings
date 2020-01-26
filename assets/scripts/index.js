@@ -1,19 +1,11 @@
 // Newsletter on load for page
-window.addEventListener("load", (event) => {
-    console.log("page loaded");
+window.addEventListener("load", () => {
+    const entirePage = document.querySelector("html");
+
+    // Handle style of newsletter in CSS
+    entirePage.innerHTML += `
+        <div class="app__newsletter">
+            
+        </div>
+    `;
 });
-
-/* 
-Dom is needed for changing the color when hovering on app__redirects-options
-
-- Add data attributes to each one and use an event listener
-
-item.addEventListener("mouseover", () => {
-    item.style.color = #33A0FF;
-});
-
-JS functionality needed is
-- Change color of app__redirects
-- Hamburger menu for mobile versions
-- Carousel on hero https://mobirise.com/bootstrap-carousel/bootstrap-video-carousel.html 
-*/
