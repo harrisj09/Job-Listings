@@ -385,15 +385,34 @@
     display: inline-block;
     border: 2px solid #E5E5E5;
     margin-left: 40px;
+    margin-bottom: 30px;
     background-color: #E5E5E5;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0px 30px;
   }
   .shop__accessories-wrapper {
     display: -ms-grid;
     display: grid;
-    /* Finish this have the columns */
+    -ms-grid-rows: (auto)[6];
+        grid-template-rows: repeat(6, auto);
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
   }
+  .accessories__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #262626;
+    padding: 29px 0px;
+  }
+  .accessories__title--options {
+    font-family: "Montserrat", sans-serif;
+    font-size: .75rem;
+    color: #262626;
+    padding-bottom: 23px;
+  }
+  .accessories__title--options--amount {
+    padding-left: 91px;
+  }
+  /* Just add hover effects for the options */
 }
 
 /* Base Attributes */
