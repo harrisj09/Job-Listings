@@ -2,7 +2,7 @@
     padding-top: 55px;
 }
 
-.shop__query-wrapper {
+.shop-wrapper {
     display: none;
 }
 
@@ -11,8 +11,15 @@
 }
 
 @media only screen and (min-width: 1000px) {
+
+    .shop-wrapper {
+        display: flex;
+        flex-flow: column;
+    }
+
+
     .shop__query-wrapper {
-        display: inline-block;
+        width: 270px;
         border: 2px solid #E5E5E5;
         margin-left: 40px;
         margin-bottom: 30px;
