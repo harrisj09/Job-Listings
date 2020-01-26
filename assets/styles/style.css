@@ -413,6 +413,7 @@
     padding: 29px 0px;
   }
   .accessories__title--options {
+    list-style: none;
     font-family: "Montserrat", sans-serif;
     font-size: .75rem;
     color: #262626;
