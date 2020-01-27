@@ -422,7 +422,7 @@
         grid-template-columns: repeat(2, auto);
   }
   .card {
-    border: 2px solid white;
+    border: 2px solid #c9c6c6;
   }
   .accessories__title {
     font-family: "Montserrat", sans-serif;
@@ -469,6 +469,7 @@
   .macbook__image {
     width: 236;
     height: 153px;
+    /* center this */
   }
 }
 
