@@ -372,6 +372,7 @@
   }
 }
 
+/* https://codepen.io/roufs_designs/pen/VwYNbJM?editors=1101 */
 .shop {
   padding-top: 55px;
 }
@@ -381,14 +382,28 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .shop {
+    padding-top: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
   .shop__menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    padding-top: 5rem;
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
   }
   .panel {
     width: 270px;
@@ -405,6 +420,9 @@
         grid-template-rows: repeat(6, auto);
     -ms-grid-columns: (auto)[2];
         grid-template-columns: repeat(2, auto);
+  }
+  .card {
+    border: 2px solid white;
   }
   .accessories__title {
     font-family: "Montserrat", sans-serif;
@@ -435,17 +453,18 @@
             justify-content: center;
   }
   .shop__items {
-    float: right;
     display: -ms-grid;
     display: grid;
-    position: relative;
-    right: 315px;
-    bottom: 570px;
-    -ms-grid-rows: (350px)[4];
-        grid-template-rows: repeat(4, 350px);
-    -ms-grid-columns: (270px)[3];
-        grid-template-columns: repeat(3, 270px);
-    grid-gap: 25px;
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    row-gap: 5rem;
+    -webkit-column-gap: 4rem;
+            column-gap: 4rem;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    padding: 6rem;
+    /* its probably better to add another div */
   }
   .macbook__image {
     width: 236;

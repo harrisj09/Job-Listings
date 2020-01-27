@@ -1,3 +1,5 @@
+/* https://codepen.io/roufs_designs/pen/VwYNbJM?editors=1101 */
+
 .shop {
     padding-top: 55px;
 }
@@ -11,12 +13,19 @@
 }
 
 @media only screen and (min-width: 1000px) {
+    
+    .shop {
+        padding-top: 55px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
 
     .shop__menu {
         display: flex;
-        flex-flow: column;
+        flex-flow: column nowrap;
+        padding-top: 5rem;
+        flex: 2;
     }
-
 
     .panel {
         width: 270px;
@@ -32,6 +41,10 @@
         grid-template-rows: repeat(6, auto); 
         grid-template-columns: repeat(2, auto);
     }
+
+    .card {
+        border: 2px solid white;
+      }
 
     .accessories__title {
         font-family: $monsterratFont;
@@ -62,15 +75,13 @@
     }
 
     .shop__items {
-        float: right;
         display: grid;
-        position: relative;
-        right: 315px;
-        bottom: 570px;
-        grid-template-rows: repeat(4, 350px); 
-        grid-template-columns: repeat(3, 270px);
-        grid-gap: 25px;
-    }
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        row-gap: 5rem;
+        column-gap: 4rem;
+        flex: 5;
+        padding: 6rem; /* its probably better to add another div */
+      }
 
     .macbook__image {
         width: 236;
