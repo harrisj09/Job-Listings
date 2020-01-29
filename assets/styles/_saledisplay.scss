@@ -8,6 +8,27 @@
     display: none;
 }
 
+.line {
+    width: inherit;
+    padding: 0px 5px;
+    border: 1px solid rgb(201, 198, 198);
+}
+
+.image__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 400px) {
+    /*.macbook__row-2 {
+        display: none;
+    }
+    
+    .macbook__row-3 {
+        display: none;
+    }*/
+}
+
 @media only screen and (min-width: 600px) {
 
 }
@@ -66,13 +87,6 @@
     }
 
     /* Just add hover effects for the options */
-    .items__macbooks {
-        border: 3px solid rgb(193, 195, 199);
-        width: 270px;
-        height: 350px;
-        display: flex;
-        justify-content: center;
-    }
 
     .shop__items {
         display: grid;
@@ -84,9 +98,8 @@
       }
 
     .macbook__image {
-        width: 236;
         height: 153px;
-        /* center this */
+
     }
 
     .circle {
@@ -127,5 +140,10 @@
 
     .more {
         text-align: center;
+        cursor: pointer;
+    }
+
+    .more:hover {
+        color: #33A0FF;
     }
 }
