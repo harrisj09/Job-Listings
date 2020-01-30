@@ -1,7 +1,8 @@
-function carousel(image, color, title, desc) {
+let onFirstIndex = false;
+
+function carousel(image, backgroundColor, title, desc) {
     this.image = image;
-    // Background color
-    this.color = color;
+    this.backgroundColor = backgroundColor;
     this.title = title;
     this.desc = desc;
 }
@@ -21,9 +22,10 @@ window.addEventListener("load", () => {
 
 // Recursivly handles watching the time.
 function timeHandler() {
-    console.log("Reset time");
     setTimeout(function() {
-        console.log("time ended");
+        const index = onFirstIndex ? 1 : 0;
+        console.log(`displaying ${caroselImages[index].backgroundColor}`);
+        onFirstIndex = !onFirstIndex;
         timeHandler();
     }, 5000);
 }
