@@ -16,7 +16,6 @@ window.addEventListener("load", () => {
     Add event listeners to get rid of the newsletter on startup, but if submit is pressed check the string length 
     or check if it contains an "@" and ".com" in it.
     */
-
 });
 
 /*
