@@ -35,8 +35,9 @@ function timeHandler() {
     Carousel effect
 
     - Have an array of objects that contains
-        + Image used on car
+        + Images used
         + Style for background to apply
+        + Title
         + BIO text
     - Set a timer to switch between images
     - If button is pressed to change image set the timer back to default wait time
