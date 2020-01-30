@@ -400,14 +400,12 @@
   height: 153px;
 }
 
-@media only screen and (min-width: 400px) {
-  /*.macbook__row-2 {
-        display: none;
-    }
-    
-    .macbook__row-3 {
-        display: none;
-    }*/
+.macbook__row-2 {
+  display: none;
+}
+
+.macbook__row-3 {
+  display: none;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -486,6 +484,12 @@
   }
   .macbook__image {
     height: 153px;
+  }
+  .macbook__row-2 {
+    display: block;
+  }
+  .macbook__row-3 {
+    display: block;
   }
   .circle {
     width: 20px;
