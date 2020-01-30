@@ -25,6 +25,7 @@ function timeHandler() {
     setTimeout(function() {
         const index = onFirstIndex ? 1 : 0;
         console.log(`displaying ${caroselImages[index].backgroundColor}`);
+        // Reset image or move to next image
         onFirstIndex = !onFirstIndex;
         timeHandler();
     }, 5000);
