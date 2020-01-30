@@ -1,8 +1,13 @@
-let onFirstIndex = false;
+let onFirstIndex = true;
 
-function carousel(image, backgroundColor, title, desc) {
+// DOM for timeHandler
+const mainDisplayBackground = document.querySelector(".app__main-display");
+const mainDisplayTitle = document.querySelector(".app__main-title");
+const mainDisplayDesc = document.querySelector(".app__main-paragraph");
+
+function carousel(image, colorTheme, title, desc) {
     this.image = image;
-    this.backgroundColor = backgroundColor;
+    this.colorTheme = colorTheme;
     this.title = title;
     this.desc = desc;
 }
@@ -17,28 +22,21 @@ window.addEventListener("load", () => {
     Add event listeners to get rid of the newsletter on startup, but if submit is pressed check the string length 
     or check if it contains an "@" and ".com" in it.
     */
+
    timeHandler();
 });
 
 // Recursivly handles watching the time.
 function timeHandler() {
-    setTimeout(function() {
+    setTimeout( () => {
         const index = onFirstIndex ? 1 : 0;
-        console.log(`displaying ${caroselImages[index].backgroundColor}`);
+        console.log(`displaying ${caroselImages[index].colorTheme}`);
         // Reset image or move to next image
+        mainDisplayTitle.innerHTML = caroselImages[index].title;
+        mainDisplayDesc.innerHTML = caroselImages[index].desc;
+        // not working
+        mainDisplayBackground.style.backgroundColor = caroselImages[index].colorTheme;
         onFirstIndex = !onFirstIndex;
         timeHandler();
     }, 5000);
 }
-
-/*
-    Carousel effect
-
-    - Have an array of objects that contains
-        + Images used
-        + Style for background to apply
-        + Title
-        + BIO text
-    - Set a timer to switch between images
-    - If button is pressed to change image set the timer back to default wait time
-*/
