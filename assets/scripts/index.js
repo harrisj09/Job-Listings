@@ -16,7 +16,17 @@ window.addEventListener("load", () => {
     Add event listeners to get rid of the newsletter on startup, but if submit is pressed check the string length 
     or check if it contains an "@" and ".com" in it.
     */
+   timeHandler();
 });
+
+// Recursivly handles watching the time.
+function timeHandler() {
+    console.log("Reset time");
+    setTimeout(function() {
+        console.log("time ended");
+        timeHandler();
+    }, 5000);
+}
 
 /*
     Carousel effect
