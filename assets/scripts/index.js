@@ -55,7 +55,6 @@ window.addEventListener("load", () => {
 function timeHandler() {
     setTimeout( () => {
         const index = onFirstIndex ? 1 : 0;
-        console.log(`displaying ${caroselImages[index].colorTheme}`);
         // Reset image or move to next image
         mainDisplayTitle.innerHTML = caroselImages[index].title;
         mainDisplayDesc.innerHTML = caroselImages[index].desc;
