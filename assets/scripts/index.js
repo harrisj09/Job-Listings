@@ -1,5 +1,6 @@
 /**
  * Documentation is probably not needed due to how short the code is, but this is a learning project.
+ * So it's probably a good idea to learn how to write proper documentation
  * @author John Harris
  */
 
