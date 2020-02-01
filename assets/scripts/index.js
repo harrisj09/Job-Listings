@@ -1,18 +1,25 @@
 /**
- * Documentation is probably not needed due to how short the code is, but it's just to show that I can write documentation.
+ * Documentation is probably not needed due to how short the code is, but this is a learning project.
  * @author John Harris
  */
 
  /**
-  * This is used in a ternary operator to check what what index 
+  * This is used in a ternary operator to check what index the user is on 
   * @type {boolean}
   */
 let onFirstIndex = true;
 
-
+/**
+ * These HTML elements are going to be targeted for the carousel effect 
+ * @type {HTMLElement} - Background Color
+ * @type {HTMLElement} - Title (iPhone X)
+ * @type {HTMLElement} - Infomation about the item being displayed (mostly dummy text)
+ * @type (HTMLElement) - Actual image of item being displayed
+ */
 const mainDisplayBackground = document.querySelector(".app__main-display");
 const mainDisplayTitle = document.querySelector(".app__main-title");
 const mainDisplayDesc = document.querySelector(".app__main-paragraph");
+const imageWrapper = document.querySelector(".app__main-display--item");
 
 /**
  * Represents the images used in the carousel
@@ -22,8 +29,8 @@ const mainDisplayDesc = document.querySelector(".app__main-paragraph");
  * @param {string} title - Item that currenty in display (ex iPhoneX)
  * @param {string} desc - Placeholder text to display
  */
-function carousel(image, colorTheme, title, desc) {
-    this.image = image;
+function carousel(mainImage, colorTheme, title, desc) {
+    this.mainImage = mainImage;
     this.colorTheme = colorTheme;
     this.title = title;
     this.desc = desc;
@@ -32,7 +39,7 @@ function carousel(image, colorTheme, title, desc) {
 /**
  * Array of carosel images to reference
  */
-const caroselImages = [
+const carouselImages = [
     new carousel("assets/images/iphonex.png", "linear-gradient(0.25turn, #FF4858, #8F65FF)", "iPhone X", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy."),
     new carousel("assets/images/iphone6.png", "#2E90E5", "iPhone 6", "Performance and design. Taken right to the edge.")
 ];
@@ -56,10 +63,11 @@ function timeHandler() {
     setTimeout( () => {
         const index = onFirstIndex ? 1 : 0;
         // Reset image or move to next image
-        mainDisplayTitle.innerHTML = caroselImages[index].title;
-        mainDisplayDesc.innerHTML = caroselImages[index].desc;
+        mainDisplayTitle.innerHTML = carouselImages[index].title;
+        mainDisplayDesc.innerHTML = carouselImages[index].desc;
+        imageWrapper.src = carouselImages[index].mainImage;
         // not working
-        mainDisplayBackground.style.backgroundColor = caroselImages[index].colorTheme;
+        // mainDisplayBackground.style.backgroundColor = caroselImages[index].colorTheme;
         onFirstIndex = !onFirstIndex;
         timeHandler();
     }, 5000);
