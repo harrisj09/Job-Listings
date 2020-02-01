@@ -37,7 +37,7 @@ function carousel(mainImage, colorTheme, title, desc) {
 }
 
 /**
- * Array of carosel images to reference
+ * @type {Array} - Array of carousel images object properties to reference
  */
 const carouselImages = [
     new carousel("assets/images/iphonex.png", "linear-gradient(0.25turn, #FF4858, #8F65FF)", "iPhone X", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy."),
@@ -52,7 +52,6 @@ window.addEventListener("load", () => {
     Add event listeners to get rid of the newsletter on startup, but if submit is pressed check the string length 
     or check if it contains an "@" and ".com" in it.
     */
-
    timeHandler();
 });
 
@@ -62,12 +61,14 @@ window.addEventListener("load", () => {
 function timeHandler() {
     setTimeout( () => {
         const index = onFirstIndex ? 1 : 0;
-        // Reset image or move to next image
+        /*
+            @TODO
+             - Fix width and height for iPhone 6
+             - Fix changing background color
+        */
+        imageWrapper.src = carouselImages[index].mainImage;
         mainDisplayTitle.innerHTML = carouselImages[index].title;
         mainDisplayDesc.innerHTML = carouselImages[index].desc;
-        imageWrapper.src = carouselImages[index].mainImage;
-        // not working
-        // mainDisplayBackground.style.backgroundColor = caroselImages[index].colorTheme;
         onFirstIndex = !onFirstIndex;
         timeHandler();
     }, 5000);
