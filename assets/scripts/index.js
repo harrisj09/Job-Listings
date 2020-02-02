@@ -38,7 +38,7 @@ function carousel(mainImage, colorTheme, title, desc) {
 }
 
 /**
- * @type {Array} - Array of carousel images object properties to reference
+ * @type {Array} - Array of carousel images object properties to reference for DOM
  */
 const carouselImages = [
     new carousel("assets/images/iphonex.png", "linear-gradient(0.25turn, #FF4858, #8F65FF)", "iPhone X", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy."),
