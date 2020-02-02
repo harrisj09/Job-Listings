@@ -528,6 +528,11 @@
   .more:hover {
     color: #33A0FF;
   }
+  .rating {
+    width: 100px;
+    height: 25px;
+    border: 2px solid black;
+  }
 }
 
 /* Base Attributes */
