@@ -31,6 +31,11 @@
     display: none;
 }
 
+.price__wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
 @media only screen and (min-width: 600px) {
 
 }
@@ -160,5 +165,9 @@
         width: 100px;
         height: 25px;
         border: 2px solid black;
+    }
+
+    .sub__title {
+        font-size: .9rem;
     }
 }

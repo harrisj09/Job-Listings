@@ -408,6 +408,14 @@
   display: none;
 }
 
+.price__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 @media only screen and (min-width: 1000px) {
   .shop {
     padding-top: 55px;
@@ -532,6 +540,9 @@
     width: 100px;
     height: 25px;
     border: 2px solid black;
+  }
+  .sub__title {
+    font-size: .9rem;
   }
 }
 
