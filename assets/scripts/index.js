@@ -15,7 +15,7 @@ let onFirstIndex = true;
  * @type {HTMLElement} - Background Color
  * @type {HTMLElement} - Title (iPhone X)
  * @type {HTMLElement} - Infomation about the item being displayed (mostly dummy text)
- * @type (HTMLElement) - Actual image of item being displayed
+ * @type {HTMLElement} - Actual image of item being displayed
  */
 const mainDisplayBackground = document.querySelector(".app__main-display");
 const mainDisplayTitle = document.querySelector(".app__main-title");
@@ -25,10 +25,10 @@ const imageWrapper = document.querySelector(".app__main-display--item");
 /**
  * Represents the images used in the carousel
  * @constructor
- * @param {string} image - URL for image to be used
- * @param {string} colorTheme - Reference for background color to change
- * @param {string} title - Item that currenty in display (ex iPhoneX)
- * @param {string} desc - Placeholder text to display
+ * @param {String} image - URL for image to be used
+ * @param {String} colorTheme - Reference for background color to change
+ * @param {String} title - Item that currenty in display (ex iPhoneX)
+ * @param {String} desc - Placeholder text to display
  */
 function carousel(mainImage, colorTheme, title, desc) {
     this.mainImage = mainImage;
