@@ -15,14 +15,21 @@ let onFirstIndex = true;
  * @type {HTMLElement} - Title (iPhone X)
  * @type {HTMLElement} - Infomation about the item being displayed (mostly dummy text)
  * @type {HTMLElement} - Actual image of item being displayed
+ * @type {HTMLElement} - Overlay/newsletter
  */
 const mainDisplayBackground = document.querySelector(".app__main-display");
 const mainDisplayTitle = document.querySelector(".app__main-title");
 const mainDisplayDesc = document.querySelector(".app__main-paragraph");
 const imageWrapper = document.querySelector(".app__main-display--item");
+const overLay = document.querySelector(".overlay");
+
+overLay.addEventListener("click", () => {
+    overLay.style.display = 'none'; 
+});
 
 /**
  * Represents the images used in the carousel
+ * 
  * @constructor
  * @param {String} image - URL for image to be used
  * @param {String} colorTheme - Reference for background color to change
@@ -48,10 +55,6 @@ const carouselImages = [
  * This is called as soon as the page loads it creates event listeners and starts the timer for the carosel. 
  */
 window.addEventListener("load", () => {
-    /* 
-    Add event listeners to get rid of the newsletter on startup, but if submit is pressed check the string length 
-    or check if it contains an "@" and ".com" in it.
-    */
    timeHandler();
 });
 
@@ -61,11 +64,6 @@ window.addEventListener("load", () => {
 function timeHandler() {
     setTimeout( () => {
         const index = onFirstIndex ? 1 : 0;
-        /*
-            @TODO
-             - Fix width and height for iPhone 6
-             - Fix changing background color
-        */
         imageWrapper.src = carouselImages[index].mainImage;
         mainDisplayTitle.innerHTML = carouselImages[index].title;
         mainDisplayDesc.innerHTML = carouselImages[index].desc;
