@@ -15,6 +15,18 @@
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .4;
+    opacity: .3;
     z-index: 30;
+}
+
+.newsletter__wrapper {
+    width: 50vw;
+    height: 50vh;
+    position: fixed;
+    border: 2px solid white;
+    background-color: white;
+    margin-left: 25%;
+    z-index: 35;
+    opacity: 1;
+    margin-top: 10%;
 }

@@ -22,9 +22,16 @@ const mainDisplayTitle = document.querySelector(".app__main-title");
 const mainDisplayDesc = document.querySelector(".app__main-paragraph");
 const imageWrapper = document.querySelector(".app__main-display--item");
 const overLay = document.querySelector(".overlay");
+const newsletter = document.querySelector(".newsletter__wrapper");
 
-overLay.addEventListener("click", () => {
+/**
+ * Event listeners to handle Newsletter
+ * Changes the display property to none
+ * if conditionals are met.
+ */
+newsletter.addEventListener("click", () => {
     overLay.style.display = 'none'; 
+    newsletter.style.display = 'none'; 
 });
 
 /**
