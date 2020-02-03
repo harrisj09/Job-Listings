@@ -3,3 +3,14 @@
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(2, auto);
 }
+
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: repeat(5, auto);
+}
+
+.info {
+    display: flex;
+    flex-flow: column nowrap;
+}
