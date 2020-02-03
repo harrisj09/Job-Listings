@@ -15,7 +15,8 @@ let onFirstIndex = true;
  * @type {HTMLElement} - Title (iPhone X)
  * @type {HTMLElement} - Infomation about the item being displayed (mostly dummy text)
  * @type {HTMLElement} - Actual image of item being displayed
- * @type {HTMLElement} - Overlay/newsletter
+ * @type {HTMLElement} - Overlay with opacity
+ * @type {HTMLElement} - Newsletter wrapper
  */
 const mainDisplayBackground = document.querySelector(".app__main-display");
 const mainDisplayTitle = document.querySelector(".app__main-title");
