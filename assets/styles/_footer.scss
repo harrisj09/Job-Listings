@@ -10,7 +10,8 @@
     grid-template-rows: repeat(5, auto);
 }
 
-.info {
+.info__wrapper {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
 }

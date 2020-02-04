@@ -539,7 +539,6 @@
   .rating {
     width: 100px;
     height: 25px;
-    border: 2px solid black;
   }
   .sub__title {
     font-size: .9rem;
@@ -564,7 +563,7 @@
       grid-template-rows: repeat(5, auto);
 }
 
-.info {
+.info__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,6 +571,9 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* Base Attributes */
