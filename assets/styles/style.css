@@ -373,6 +373,11 @@
 }
 
 /* https://codepen.io/roufs_designs/pen/VwYNbJM?editors=1101 */
+.rating {
+  width: 50px;
+  height: 12px;
+}
+
 .shop {
   padding-top: 55px;
 }
@@ -398,6 +403,7 @@
 
 .macbook__image {
   height: 153px;
+  padding-bottom: 10px;
 }
 
 .macbook__row-2 {
@@ -545,35 +551,48 @@
   }
 }
 
-.top {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (400px)[3];
-      grid-template-columns: repeat(3, 400px);
-  -ms-grid-rows: (auto)[2];
-      grid-template-rows: repeat(2, auto);
-}
-
 .bottom {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (200px)[6];
-      grid-template-columns: repeat(6, 200px);
-  -ms-grid-rows: (auto)[5];
-      grid-template-rows: repeat(5, auto);
+  display: none;
 }
 
-.info__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media only screen and (min-width: 1000px) {
+  .top {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (400px)[3];
+        grid-template-columns: repeat(3, 400px);
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    padding-bottom: 30px;
+  }
+  .bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (200px)[6];
+        grid-template-columns: repeat(6, 200px);
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
+  }
+  .info__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .title {
+    color: grey;
+    font-size: 2.25rem;
+  }
+  .title-bio {
+    font-size: .95rem;
+    color: grey;
+  }
 }
 
 /* Base Attributes */

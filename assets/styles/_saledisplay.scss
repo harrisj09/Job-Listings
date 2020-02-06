@@ -1,5 +1,10 @@
 /* https://codepen.io/roufs_designs/pen/VwYNbJM?editors=1101 */
 
+.rating {
+    width: 50px;
+    height: 12px;
+}
+
 .shop {
     padding-top: 55px;
 }
@@ -21,6 +26,7 @@
 
 .macbook__image {
     height: 153px;
+    padding-bottom: 10px;
 }
 
 .macbook__row-2 {
@@ -34,10 +40,6 @@
 .price__wrapper {
     display: flex;
     justify-content: space-around;
-}
-
-@media only screen and (min-width: 600px) {
-
 }
 
 @media only screen and (min-width: 1000px) {
