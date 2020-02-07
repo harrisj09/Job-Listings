@@ -3,7 +3,19 @@
 }
 
 .social-icons {
-    padding-top: 10px;
+    padding-top: 20px;
+}
+
+.social-media {
+    font-family: $monsterratFont; 
+    font-size: 1rem;
+    color: #22262A;
+}
+
+.social-media__desc {
+    font-family: $monsterratFont; 
+    font-size: .8rem;
+    color: #22262A;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -15,6 +27,7 @@
     }
     
     .bottom {
+        padding-top: 30px;
         display: grid;
         grid-template-columns: repeat(6, 200px);
         grid-template-rows: repeat(5, auto);
@@ -27,12 +40,14 @@
     }
 
     .title {
-        color: grey;
+        font-family: $monsterratFont; 
+        color: #C1C8CE;
         font-size: $titleDesktopSize;
     }
 
     .title-bio {
-        font-size: .95rem;
-        color: grey;
+        font-family: $monsterratFont; 
+        font-size: .8rem;
+        color: #22262A;
     }
 }
