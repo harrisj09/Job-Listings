@@ -22,6 +22,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 0.75rem;
   margin: 10px 0px;
+  padding-left: 10px;
   cursor: pointer;
 }
 
@@ -51,8 +52,8 @@
           justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
 .app__redirects-options {
@@ -571,6 +572,16 @@
   color: #22262A;
 }
 
+.redirects__wrapper {
+  display: none;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  color: #C1C8CE;
+  font-size: 1.15rem;
+}
+
 @media only screen and (min-width: 1000px) {
   .top {
     display: -ms-grid;
@@ -611,6 +622,17 @@
     font-family: "Montserrat", sans-serif;
     font-size: .8rem;
     color: #22262A;
+  }
+  .redirects__wrapper {
+    display: block;
+  }
+  .contact {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.15rem;
+  }
+  .contact-info {
+    font-family: "Montserrat", sans-serif;
+    font-size: .75rem;
   }
 }
 
