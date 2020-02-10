@@ -68,6 +68,10 @@ window.addEventListener("load", () => {
 
 /**
  * timeHandler is called recursivly and includes a setTimeout to change between the caroselImages array
+ * and applying DOM to the main display
+ * 
+ * @type {Integer} - uses a ternary operator to switch between the value of 0 and 1 and is referenced in picking which
+ * array index to use 
  */
 function timeHandler() {
     setTimeout( () => {
@@ -75,6 +79,7 @@ function timeHandler() {
         imageWrapper.src = carouselImages[index].mainImage;
         mainDisplayTitle.innerHTML = carouselImages[index].title;
         mainDisplayDesc.innerHTML = carouselImages[index].desc;
+        mainDisplayBackground.style.background = carouselImages[index].colorTheme;
         onFirstIndex = !onFirstIndex;
         timeHandler();
     }, 5000);

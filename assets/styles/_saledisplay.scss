@@ -5,6 +5,14 @@
     height: 12px;
 }
 
+.price {
+    color: #FF4858;
+}
+
+.price__previous {
+    color: #C1C8CE;
+}
+
 .shop {
     padding-top: 55px;
 }
@@ -16,7 +24,7 @@
 .line {
     width: inherit;
     padding: 0px 5px;
-    border: 1px solid rgb(201, 198, 198);
+    border: 1px solid #F6F7F8;
 }
 
 .image__wrapper {
@@ -40,6 +48,11 @@
 .price__wrapper {
     display: flex;
     justify-content: space-around;
+}
+
+.rating__wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -73,7 +86,7 @@
     }
 
     .card {
-        border: 2px solid rgb(201, 198, 198);
+        border: 2px solid #F6F7F8;
       }
 
     .accessories__title {
