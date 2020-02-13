@@ -22,6 +22,8 @@
     font-family: $monsterratFont; 
     font-size: .8rem;
     color: #22262A;
+    padding-top: 10px;
+    line-height: 30px; 
 }
 
 .redirects__wrapper {
@@ -82,5 +84,7 @@
     .contact-info {
         font-family: $monsterratFont;
         font-size: .75rem;
+        padding-top: 10px;
+        line-height: 30px; 
     }
 }
