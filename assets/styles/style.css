@@ -669,12 +669,14 @@
   }
   .redirects__wrapper {
     display: block;
+    padding-top: 10px;
+    line-height: 30px;
   }
   .contact-info {
     font-family: "Montserrat", sans-serif;
     font-size: .75rem;
     padding-top: 10px;
-    line-height: 30px;
+    line-height: 20px;
   }
 }
 
