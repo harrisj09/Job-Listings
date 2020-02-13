@@ -4,6 +4,11 @@
 @import "./saledisplay";
 @import "./footer";
 
+/*
+    The CSS uses a mobile first philosophy. The styles that are applied first are made
+    for a mobile screen. After that media queries were made for larger screen sizes
+*/
+
 /* Base Attributes */
 * {
     margin: 0;
