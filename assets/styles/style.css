@@ -615,6 +615,7 @@
     -ms-grid-rows: (auto)[2];
         grid-template-rows: repeat(2, auto);
     padding-bottom: 30px;
+    border-bottom: 2px solid #F6F7F8;
   }
   .bottom {
     padding-top: 30px;
@@ -646,6 +647,8 @@
     font-family: "Montserrat", sans-serif;
     font-size: .8rem;
     color: #22262A;
+    padding-top: 10px;
+    line-height: 30px;
   }
   .redirects__wrapper {
     display: block;
