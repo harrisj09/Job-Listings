@@ -8,8 +8,14 @@
 
 .social-media {
     font-family: $monsterratFont; 
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #22262A;
+}
+
+.contact {
+    font-family: $monsterratFont;
+    font-size: $mainDisplayParagraphDesktopSize;
+    font-size: 1.5rem;
 }
 
 .social-media__desc {
@@ -26,6 +32,11 @@
     font-family: $monsterratFont;
     color: #C1C8CE;
     font-size: $titleMobileSize;
+}
+
+.section__wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -66,11 +77,6 @@
 
     .redirects__wrapper {
         display: block;
-    }
-
-    .contact {
-        font-family: $monsterratFont;
-        font-size: $mainDisplayParagraphDesktopSize;
     }
 
     .contact-info {

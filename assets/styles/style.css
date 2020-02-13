@@ -586,8 +586,14 @@
 
 .social-media {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #22262A;
+}
+
+.contact {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+  font-size: 1.5rem;
 }
 
 .social-media__desc {
@@ -604,6 +610,15 @@
   font-family: "Montserrat", sans-serif;
   color: #C1C8CE;
   font-size: 1.15rem;
+}
+
+.section__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -652,10 +667,6 @@
   }
   .redirects__wrapper {
     display: block;
-  }
-  .contact {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.15rem;
   }
   .contact-info {
     font-family: "Montserrat", sans-serif;
