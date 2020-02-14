@@ -4,7 +4,7 @@
  * Translations from the NPM package should work by adding an event listener
  * to the drop down options. This will pass in the data attribute of what
  * was clicked on. Each data attribute holds the prefix of the language thats
- * used in the NPM package so english hold "EN". To then execute the translations.
+ * used in the NPM package so english holds "EN". To then execute the translations.
  * 
  * https://www.npmjs.com/package/google-translate
  * 
