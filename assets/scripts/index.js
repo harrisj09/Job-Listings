@@ -1,5 +1,13 @@
 /**
- * Entire script handles DOM such as carousel, shopping cart etc
+ * Entire script handles DOM such as carousel, shopping cart, translations etc
+ * 
+ * Translations from the NPM package should work by adding an event
+ * listener to the drop down options. This will pass in the data attribute 
+ * of what was clicked on. Each data attribute holds the prefix of the language
+ * thats used in the NPM package so english hold "EN". To then execute the translations.
+ * 
+ * https://www.npmjs.com/package/google-translate
+ * 
  * @author John Harris
  */
 
