@@ -18,10 +18,10 @@ let onFirstIndex = true;
  * @type {HTMLElement} - Overlay with opacity
  * @type {HTMLElement} - Newsletter wrapper
  */
-const mainDisplayBackground = document.querySelector(".app__main-display");
-const mainDisplayTitle = document.querySelector(".app__main-title");
-const mainDisplayDesc = document.querySelector(".app__main-paragraph");
-const imageWrapper = document.querySelector(".app__main-display--item");
+const mainDisplayBackground = document.querySelector(".hero__main-display");
+const mainDisplayTitle = document.querySelector(".hero__main-title");
+const mainDisplayDesc = document.querySelector(".hero__main-paragraph");
+const imageWrapper = document.querySelector(".hero__main-display--item");
 const overLay = document.querySelector(".overlay");
 const newsletter = document.querySelector(".newsletter__wrapper");
 
