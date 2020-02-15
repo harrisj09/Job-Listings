@@ -21,6 +21,16 @@
     display: none;
 }
 
+.rating__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-title__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .line {
     width: inherit;
     padding: 0px 5px;
