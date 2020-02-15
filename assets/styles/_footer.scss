@@ -1,3 +1,7 @@
+.info {
+    padding-top: 100px;
+}
+
 .bottom {
     display: none;
 }
@@ -16,6 +20,12 @@
     font-family: $monsterratFont;
     font-size: $mainDisplayParagraphDesktopSize;
     font-size: 1.5rem;
+}
+
+.payment {
+    width: 38px;
+    height: 25px;
+    border: 2px solid black;
 }
 
 .social-media__desc {
@@ -55,12 +65,19 @@
         display: grid;
         grid-template-columns: repeat(6, 200px);
         grid-template-rows: repeat(5, auto);
+        border-bottom: 2px solid #F6F7F8;
     }
     
     .info__wrapper {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
+    }
+
+    .redirects__items {
+        font-family: $monsterratFont;
+        color: #262626;
+        font-size: .75rem;
     }
 
     .title {
