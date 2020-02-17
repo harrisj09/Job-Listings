@@ -6,8 +6,12 @@
     display: none;
 }
 
+.payment__wrapper {
+    display: none;
+}
+
 .social-icons {
-    padding-top: 20px;
+    display: none;
 }
 
 .social-media {
@@ -34,6 +38,21 @@
     color: #22262A;
     padding-top: 10px;
     line-height: 30px; 
+}
+
+.end__wrapper {
+    display: flex;
+}
+
+.payment__wrapper {
+    display: flex;
+    margin-right: 100px;
+    flex-flow: row wrap;
+}
+
+.copyright {
+    flex-grow: 10;
+    margin-left: 100px;
 }
 
 .redirects__wrapper {
@@ -104,6 +123,11 @@
         font-family: $monsterratFont;
         font-size: .75rem;
         padding-top: 10px;
-        line-height: 20px; 
+        line-height: 20px;
+    }
+
+    .social-icons {
+        display: block;
+        padding-top: 20px;
     }
 }
