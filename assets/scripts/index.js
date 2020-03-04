@@ -12,6 +12,13 @@
  */
 
  /**
+  * Adding packages
+  * 
+  * try running this through npm
+  */
+import { gsap } from "gsap";
+
+ /**
   * This is used in a ternary operator to check what index the user is on 
   * @type {boolean}
   */
@@ -89,6 +96,7 @@ function timeHandler() {
         mainDisplayDesc.innerHTML = carouselImages[index].desc;
         mainDisplayBackground.style.background = carouselImages[index].colorTheme;
         onFirstIndex = !onFirstIndex;
+        gsap.to(".hero__main-display--item", {duration: 2, x: 100});
         timeHandler();
     }, 5000);
 }

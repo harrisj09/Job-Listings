@@ -1,0 +1,23 @@
+{
+  "name": "Bouncer-eCommerce",
+  "version": "1.0.0",
+  "description": "[Design](https://xd.adobe.com/view/07655e90-7845-421f-6deb-866a758bed68-7154/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrisj09/Bouncer-eCommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrisj09/Bouncer-eCommerce/issues"
+  },
+  "homepage": "https://github.com/harrisj09/Bouncer-eCommerce#readme",
+  "dependencies": {
+    "gsap": "^3.2.4"
+  }
+}
