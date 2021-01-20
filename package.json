@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/harrisj09/Bouncer-eCommerce#readme",
   "dependencies": {
-    "gsap": "^3.2.4"
+    "gsap": "^3.6.0"
   }
 }
