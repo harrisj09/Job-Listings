@@ -8,6 +8,8 @@
  * 
  * https://www.npmjs.com/package/google-translate
  * 
+ *
+ * This is a comment on the variable branch
  * @author John Harris
  */
 
