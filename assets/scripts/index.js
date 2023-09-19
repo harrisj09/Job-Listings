@@ -39,6 +39,8 @@ const mainDisplayDesc = document.querySelector(".hero__main-paragraph");
 const imageWrapper = document.querySelector(".hero__main-display--item");
 const overLay = document.querySelector(".overlay");
 const newsletter = document.querySelector(".newsletter__wrapper");
+const randomVariable =  15;
+
 
 /**
  * Event listeners to handle Newsletter
